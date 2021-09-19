@@ -50,13 +50,3 @@ const showBrewery = (event) => {
       <p>${data.website_url}</p>`;
     });
 };
-
-// function renderBrews(brews) {
-//   const ul = document.querySelector("ul");
-//   brews.forEach((brew) => {
-//     const li = document.createElement("li");
-//     li.innerHTML = brew.name;
-//     ul.appendChild(li);
-//   });
-// }
-// <a href="#">${</a>
