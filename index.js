@@ -46,7 +46,6 @@ const showBrewery = (event) => {
       <p>${data.state}</p>
       <h3>ZIP Code: </h3>
       <p>${data.postal_code}</p>
-      <h3>URL: </h3>
-      <p>${data.website_url}</p>`;
+      `;
     });
 };
