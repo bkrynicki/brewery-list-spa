@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   //Once the Dom is loaded, send our fetch request for Brewery Information and activate our button to show all breweries
   getBrews();
   document.getElementById("Breweries").addEventListener("click", getBrews);
+  document.getElementById("submit").addEventListener("click", submitForm);
 });
+
+function submitForm() {
+  const id = document.getElementById("id").value;
+  document.getElementById("submission").innerHTML = id;
+}
 
 function getBrews() {
   const ul = document.getElementById("brewery-list");
@@ -58,3 +64,8 @@ const showBrewery = (event) => {
       `;
     });
 };
+
+//When typed into form, display what is written once submit is clicked
+
+// let form = document.createElement("form)");
+// form.innerHTML = '<input type="text" value="Type Here">';
